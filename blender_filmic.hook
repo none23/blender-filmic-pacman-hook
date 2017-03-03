@@ -1,5 +1,4 @@
 [Trigger]
-Description = Install filmic-blender 
 Operation = Install
 Operation = Upgrade
 Type = Package
