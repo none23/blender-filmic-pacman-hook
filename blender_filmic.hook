@@ -1,0 +1,10 @@
+[Trigger]
+Description = Install filmic-blender 
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = blender
+
+[Action]
+When = PostTransaction
+Exec = /etc/pacman.d/hooks/blender_filmic.zsh
