@@ -4,7 +4,10 @@
 FILMIC_BLENDER_LOCAL_PATH=${1-/opt/filmic-blender}
 
 # clone filmic-blender if local repo doesn't exist
-[[ -d $FILMIC_BLENDER_LOCAL_PATH ]] || mkdir -p $FILMIC_BLENDER_LOCAL_PATH && git clone https://github.com/sobotka/filmic-blender $FILMIC_BLENDER_LOCAL_PATH
+[[ -d $FILMIC_BLENDER_LOCAL_PATH ]] || \
+    ( mkdir -p $FILMIC_BLENDER_LOCAL_PATH && \
+      git clone https://github.com/sobotka/filmic-blender $FILMIC_BLENDER_LOCAL_PATH \
+    );
 
 # cd into blender datafiles directory
 cd /usr/share/blender/*/datafiles;
