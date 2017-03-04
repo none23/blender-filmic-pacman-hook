@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # set path to local filmic-blender repo
-FILMIC_BLENDER_LOCAL_PATH=${1-/opt/filmic-blender}
+FILMIC_BLENDER_LOCAL_PATH=${1-/opt/filmic-blender};
 
 # clone filmic-blender if local repo doesn't exist
 [[ -d $FILMIC_BLENDER_LOCAL_PATH ]] || \
