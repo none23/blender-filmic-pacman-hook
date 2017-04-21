@@ -6,4 +6,4 @@ Target = blender
 
 [Action]
 When = PostTransaction
-Exec = /etc/pacman.d/hooks/blender_filmic.zsh
+Exec = /etc/pacman.d/hooks/blender_filmic.sh
