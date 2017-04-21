@@ -1,5 +1,5 @@
-#!/bin/zsh
+#!/bin/sh
 
-[[ -d /etc/pacman.d/hooks ]] || sudo mkdir /etc/pacman.d/hooks
+[ -d /etc/pacman.d/hooks ] || sudo mkdir /etc/pacman.d/hooks
 sudo cp ./blender_filmic.hook /etc/pacman.d/hooks/blender_filmic.hook
-sudo cp ./blender_filmic.zsh /etc/pacman.d/hooks/blender_filmic.zsh
+sudo cp ./blender_filmic.sh /etc/pacman.d/hooks/blender_filmic.sh
